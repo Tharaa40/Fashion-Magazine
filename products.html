@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT REVIEWS | GlaMe Magazine </title>
+    <link rel = "icon" type="image/jpg" href="CoverImages/LetterG_icon.jpg"/>
+    <!--Link to stylesheet-->
+    <link href="products.css" rel="stylesheet">
+
+    <!--Link to Javascript-->
+    <script src="products.js"></script>
+
+    <!--Bootstrap Import-->
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script> 
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quattrocento+Sans&display=swap" rel="stylesheet">
+
+   <!-- Owl Carousel Default Theme -->
+   <link rel="stylesheet" href="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+   <link rel="stylesheet" href="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    
+   <!--  jQuery 1.7+  -->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous">
+  </script>
+  
+  <!-- Include js plugin -->
+  <script src="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script><!--Downloaded Owl Carousel from https://owlcarousel2.github.io/OwlCarousel2/-->
+  <script>
+      $(document).ready(function(){
+      $(".owl-carousel").owlCarousel();
+      });
+  </script>
+</head>
+
+<body>
+    <div class="body-wrap">
+        <!--Navigation Bar-->
+       <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">GlaMe</a>
+                <!--Implemented Bootstrap for the button (Hamburger icon)-->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#NavBarMenu"
+                    aria-controls="NavBarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="NavBarMenu">
+                    <ul class="navbar-nav text-center">
+                        <li>
+                            <a class="nav-link" href="skincare.html">SKINCARE</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="makeup.html">MAKEUP</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="fitness.html">FITNESS</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="hair.html">HAIRCARE</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="products.html">PRODUCT REVIEWS</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav text-center" id="RightMenu">
+                        <li>
+                            <a class="nav-link" href="#">SIGN IN</a>
+                        </li>
+                    </ul> 
+                    <!--Search Bar-->
+                    <form class="search">
+                        <input class="text-field" type="text" placeholder="Search" value name="s">
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!--Banner Image-->
+        <div class="banner-image" id="Main-Image">
+            <img src="ProductsReview_Images/Banner-Image.jpg" class="banner" alt="Food Banner Image" >
+        </div>
+
+         <!--Header Section which includes the article title, author and date-->
+         <div class="flex-wrap">
+            <div class="container-sm-fluid padding" id="Header">
+                <div class="grid">
+                    <div class="row" id="HeaderSection">
+                        <div class="col-sm-8" id="Main">
+                            <h1 id="ArticleHeader">Catch RIHANNA right here</h1>
+                            <h5 id="SubHeader">Never miss the one and only!</h5>
+                        </div>
+                        <div class="col-sm-4" id="Sub">
+                            <h6 id="Author">Amanda Rae</h6>
+                            <h6 id="Date">15 February 2022</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid padding">
+            <!--Catalogue-->
+            <div class="col-3" id="Catalogue">
+                <aside>
+                    <img src="SkincareImages/Catalogue.jpg" alt="Magazine Catalogue" width="310" height="210">
+                    <div class="CatalogueName">
+                        <h4>THE AUTUMN ISSUE</h4>
+                        <a href="#">CLICK TO READ</a>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <h3>Rihanna's Go-To Products</h3>
+                <ul class="FentyProducts">
+                    <li class="list-item active">
+                        <img src="ProductsReview_Images/Blush.jpg" alt="Blush">
+                        <span>Cheeks Out Freestyle Cream Blush</span>
+                    </li>
+                    <li class="list-item">
+                        <img src="ProductsReview_Images/Lipstick.jpg" alt="Lipstick">
+                        <span>Slip Shine Sheer Shiny Lipstick</span>
+                    </li>
+                    <li class="list-item">        
+                        <img src="ProductsReview_Images/Eyeshadow.jpg" alt="Eyeshadow">
+                        <span>Snap Shadows Mix & Match Eyeshadow Palette</span>
+                    </li>
+                    <li class="list-item">        
+                        <img src="ProductsReview_Images/Diamond_Bomb_All-Over_Diamond_Veil.jpg" alt="Highlight">
+                        <span>Diamond Bomb All-Over Diamond Veil</span>
+                    </li>
+                </ul>
+                <ul class="FentyProducts">                
+                    <li class="list-item">
+                        <img src="ProductsReview_Images/Foundation.jpg" alt="Foundation">
+                        <span>Pro Filt'r Soft Matte Longwear Foundation</span>
+                    </li>
+                    <li class="list-item">
+                        <img src="ProductsReview_Images/LipLuminizer.jpg" alt="Lip Luminizer">
+                        <span>Gloss Bomb Universal Lip Luminizer</span>
+                    </li>
+                    <li class="list-item">        
+                        <img src="ProductsReview_Images/Contour.jpg" alt="Contour">
+                        <span>Match Stix Contour Skinsticks</span>
+                    </li>
+                    <li class="list-item">        
+                        <img src="ProductsReview_Images/Powder.jpg" alt="Resetting Powder">
+                        <span>Pro Filt'r Instant Retouch Setting Powder</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-9">
+                <article class="Content">
+                    <p>Welp, we might not be getting an album from Rihanna anytime soon, but we are getting a skincare line, and that's the next best thing, right? Right. Fenty Skin's first launch will include three multitasking products all designed to simplify your skincare routine: a cleanser, a toner, and an SPF moisturizer.</p> 
+                    <span><b>Some fast facts about them:</b></span>
+                    <p id="SecondPara">
+                        <b><i>The Total Cleans'r Remove-It-All Cleanser</i></b> is a makeup remover-cleanser hybrid that dissolves dirt and makeup without completely stripping your skin dry.
+                        <br>
+                        <b><i>The Fat Water Pore-Refiner Toner</i></b> is a half-toner, half-serum stacked with ingredients to brighten your skin (think: niacinamide and Barbados cherry).
+                        <br>
+                        And last, but definitely not least, is the <b><i>Hydra Vizor Invisible Moisturizer Broad Spectrum SPF 30 Sunscreen</i></b>, which, TBH, is my favorite. It's a lightweight moisturizer-sunscreen that gives you hydration and protection from UV rays without making you look ashy.
+                        <br>
+                        When asked about the inspiration behind her new skincare launch, Rihanna admitted that her skin insecurities are actually what inspired her to launch a line of skincare products. Yup—even Rihanna, a goddess with major BDE, doesn't feel amazing about her skin one hundred percent of the time. 
+                        All her skincare issues, including hyperpigmentation, sensitivity, blotchiness, and dry patches, gave her major perspective when creating this line.
+                        “I've had different issues with skincare at different points in my life,” said Rihanna in an ~intimate~ Zoom conversation with beauty editors (including yours truly, because I've clearly been blessed). “There have been challenges, so you kind of have to figure it out. 
+                        It's difficult, though, to navigate and get a grasp on what's right for you.” This confusion over exactly what to put on her face led her to develop a skincare starter pack that's easy to use but still super effective.
+                    </p>
+                    <span class="link">Check out Fenty Skin products right <a href="https://fentybeauty.com/pages/fentyskin">here!</a></span>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!--Bottom Section Content-->
+    <div class="container-fluid" id="CelebProducts">
+        <div class="row">
+           <p><b>More from the Celebrities</b></p>
+        </div>
+        <div class="row">
+            <p>Skincare, Haircare, Makeup and Fitness Line just for the fans!</p>
+        </div>
+    </div>
+
+    <!--Rare Beauty Section-->
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <img src="ProductsReview_Images/Selena.jpg" alt="Selena Gomez">
+            </a>
+            <div class="desc">
+                <span>MAKEUP</span> <br>
+                <span class="CelebBrand">Rare Beauty by Selena Gomez</span>
+            </div>
+        </div>
+    </div>
+
+    <!--Flawless Section-->
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <img src="ProductsReview_Images/Gabrielle.jpg" alt="Gabrielle Union">
+            </a>
+            <div class="desc">
+                <span>HAIRCARE</span> <br>
+                <span class="CelebBrand">Flawless by Gabrielle Union</span>
+            </div>
+        </div>
+    </div>
+
+    <!--Keys Soulcare Section-->
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <img src="ProductsReview_Images/Alicia.jpg" alt="Alicia Keys">
+            </a>
+            <div class="desc">
+                <span>SKINCARE</span> <br>
+                <span class="CelebBrand">Keys Soulcare by Alicia Keys </span>
+            </div>
+        </div>
+    </div>
+
+    <!--Fabletics Section-->
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="#">
+                <img src="ProductsReview_Images/Kate.jpg" alt="Kate Hudson">
+            </a>
+            <div class="desc">
+                <span>FITNESS</span> <br>
+                <span class="CelebBrand">Fabletics by Kate Hudson</span>
+            </div>
+        </div>
+    </div>
+
+    <!--Slider-->
+    <div id="slider" class="owl-carousel">
+        <div>
+            <a href="https://www.allure.com/review/wander-beauty-baggage-claim-gold-eye-masks"><img src="Slider/EyeMask.jpg" height="250" alt="Lady wearing eyemask"></a>
+        </div>
+        <div>
+            <a href="https://www.allure.com/gallery/best-makeup-brushes"><img src="Slider/Brushes.jpg" height="250" alt="Makeup Brushes"></a>
+        </div>
+        <div>
+            <a href="https://stylemagazines.com.au/food/brisbanes-indian-food/"><img src="Slider/Bowl.jpg" height="250" alt="Half bowl of rice"></a>
+        </div>
+        <div>
+            <a href="https://www.allure.com/story/underpainting-makeup-contouring-technique"><img src="Slider/Blush.jpg" height="250" alt="Highlight for the face"></a>
+        </div>
+        <div>
+            <a href="https://stylemagazines.com.au/lifestyle/brisbane-best-boxing-gyms1/"><img src="Slider/shadow.jpg" height="250" alt="Shadow of a woman on the wall"></a>
+        </div>
+        <div>
+            <a href="https://www.allure.com/gallery/editors-favorite-new-beauty-products-january-2022"><img src="Slider/products.jpg" height="250" alt="Texture of products"></a>
+        </div>
+        <div>
+            <a href="https://stylemagazines.com.au/lifestyle/medibank-feel-good-program-review/"><img src="Slider/yoga.jpg" height="250" alt="Woman doing yoga"></a>
+        </div>
+        <div>
+            <a href="https://www.allure.com/sponsored/story/pantene-essential-botanicals-passion-fruit-cocoa-butter-shampoo-conditioner-review"><img src="Slider/CombingHair.jpg" height="250" alt="An older lady combing hair"></a>
+        </div>
+        <div>
+            <a href="https://stylemagazines.com.au/food/anita-gelato/"><img src="Slider/icecream.jpg" height="250" alt="Icecream"></a>
+        </div>
+        <div>
+            <a href="https://stylemagazines.com.au/beauty/brisbanes-best-hair-colourists/"><img src="Slider/PinkHair.jpg" height="250" alt="A girl with pink hair"></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row" id="Top">
+                <div class="col-sm-6" id="SocialMedia">
+                    <ul>
+                        <li class="footer-icon">
+                            <img src="FooterImages/Instagram.png" alt="Instagram Icon">
+                        </li>
+                        <li class="footer-icon">
+                            <img src="FooterImages/Twitter.png" alt="Twitter Icon">
+                        </li>
+                        <li class="footer-icon">
+                            <img src="FooterImages/Facebook.png" alt="Facebook Icon">
+                        </li>
+                        <li class="footer-icon">
+                            <img src="FooterImages/Pintrest.png" alt="Pinterest Icon">
+                        </li>
+                        <li class="footer-icon">
+                            <img src="FooterImages/Youtube.png" alt="Youtube Icon">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6" id="FooterLogoContents">
+                    <ul class="footer-listContainer">
+                        <li class="footer-list item"><a href="#">About us</a></li>
+                        <li class="footer-list item"><a href="#">Contact</a></li>
+                        <li class="footer-list item"><a href="#">Careers</a></li>
+                        <li class="footer-list item"><a href="#">Newsletters</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row" id="Middle">
+                <div class="col-sm-3 offset-md-1" id="BrandNetwork">
+                    <span>GlaMe Networks</span>
+                    <div class="footer-partners">
+                        <ul>
+                            <li><a href="#">GlaMe CANADA</a></li>
+                            <li><a href="#">GlaMe MEXICO</a></li>
+                            <li><a href="#">GlaMe ITALY</a></li>
+                            <li><a href="#">GlaMe TURKEY</a></li>
+                            <li><a href="#">GlaMe KOREA</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 offset-md-1" id="Shop">
+                    <span>Shop Here</span>
+                    <div class="footer-shop">
+                        <ul>
+                            <li><a href="#">Makeup</a></li>
+                            <li><a href="#">Skincare</a></li>
+                            <li><a href="#">Haircare</a></li>
+                            <li><a href="#">Workout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4" id="More">
+                    <form name="Form">
+                        <div class="container">
+                            <input class="text-field" type="text" id="identity" placeholder="Name" name="name" required>
+                            <input class="text-field" type="text" id="mail" placeholder="Email Address" name="email"
+                                style="margin-top:15px" required>
+                        </div>
+                        <div class="container">
+                            <input type="submit" value="Subscribe" onclick="Subscribe();">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row" id="Bottom">
+                <div class="col-sm-7 offset-md-3" id="Description">
+                    <p>GlaMe is all about sharing, inspiring and motivating individuals to learn more about themselves. 
+                        Ranging from skincare to fitness, all are worth learning to feel good about yourself! 
+                    </p>
+                    <span>&copy; GlaMe Magazine 2022</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

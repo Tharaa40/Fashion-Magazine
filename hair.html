@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAIRCARE | GlaMe Magazine </title>
+    <link rel = "icon" type="image/jpg" href="CoverImages/LetterG_icon.jpg"/>
+
+    <!--Link to stylesheet-->
+    <link href="hair.css" rel="stylesheet">
+
+    <!--Link to Javascript-->
+    <script src="hair.js"></script>
+
+    <!--Bootstrap Import-->
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script> 
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quattrocento+Sans&display=swap" rel="stylesheet">
+
+   <!-- Owl Carousel Default Theme -->
+   <link rel="stylesheet" href="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+   <link rel="stylesheet" href="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    
+   <!--  jQuery 1.7+  -->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous">
+  </script>
+  
+  <!-- Include js plugin -->
+  <script src="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script><!--Downloaded Owl Carousel from https://owlcarousel2.github.io/OwlCarousel2/-->
+  <script>
+      $(document).ready(function(){
+      $(".owl-carousel").owlCarousel();
+      });
+  </script>
+</head>
+
+<body>
+    <div class="body-wrap">
+        <!--Navigation Bar-->
+       <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">GlaMe</a>
+                <!--Implemented Bootstrap for the button (Hamburger icon)-->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#NavBarMenu"
+                    aria-controls="NavBarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="NavBarMenu">
+                    <ul class="navbar-nav text-center">
+                        <li>
+                            <a class="nav-link" href="skincare.html">SKINCARE</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="makeup.html">MAKEUP</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="fitness.html">FITNESS</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="hair.html">HAIRCARE</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="products.html">PRODUCT REVIEWS</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav text-center" id="RightMenu">
+                        <li>
+                            <a class="nav-link" href="#">SIGN IN</a>
+                        </li>
+                    </ul>
+                    <!--Search Bar-->
+                    <form class="search">
+                        <input class="text-field" type="text" placeholder="Search" value name="s">
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!--Banner Image-->
+        <div class="banner-image" id="Main-Image">
+            <img src="HaircareImages/Banner-Image.jpg" class="img-fluid" alt="Food Banner Image">
+        </div>
+
+         <!--Header Section which includes the article title, author and date-->
+         <div class="flex-wrap">
+            <div class="container-sm-fluid padding" id="Header">
+                <div class="grid">
+                    <div class="row" id="HeaderSection">
+                        <div class="col-sm-8" id="Main">
+                            <h1 id="ArticleHeader">All about Castor Oil</h1>
+                            <h5 id="SubHeader">Yes! Its not just for cooking but for your hair too</h5>
+                        </div>
+                        <div class="col-sm-4" id="Sub">
+                            <h6 id="Author">Alaina Reid</h6>
+                            <h6 id="Date">2 February 2022</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid padding">
+            <!--Catalogue-->
+            <div class="col-3" id="Catalogue">
+                <aside>
+                    <img src="SkincareImages/Catalogue.jpg" alt="Magazine Catalogue" width="310" height="210">
+                    <div class="CatalogueName">
+                        <h4>THE AUTUMN ISSUE</h4>
+                        <a href="#">CLICK TO READ</a>
+                    </div>
+                </aside>
+            </div>
+
+            <!--Main Content-->
+            <div class="col-md-9">
+                <article class="Content">
+                    <p><strong>C</strong>astor oil is a vegetable oil pressed from castor beans, and it's been around for centuries. It's usually colorless, although you've likely seen yellow or black versions on Amazon or at your local Ulta. 
+                        Jamaican black castor oil is one of the more popular variations (and a favorite of Nastasha Burrell, licensed cosmetologist and hair expert). It has a thicker consistency because it's boiled with ash, which gives it a warm, roasted scent. 
+                        Castor oil itself is loaded with vitamin E, fatty acids, and minerals, says Hadley King, MD, a dermatologist in NYC, and is naturally emollient, making it an ideal ingredient for ultra-hydrating conditioners and masks.
+                        It's also a super-popular option for treating irritated scalps, excess oil, and dandruff, thanks to the fact that “castor oil is not only anti-inflammatory and anti-microbial, but it also helps maintain moisture in the skin,” says Michelle Blaisure, BosleyMD trichologist.
+                    </p>
+                    <p>The good news: Castor oil is an affordable treatment if you're looking to add shine, smooth flyaways, and condition your hair, says hairstylist Courtney Foster. 
+                        The not-so-good news: Even though there are plenty of stories around castor oil and hair growth, there aren't any studies or scientific evidence that proves castor oil will actually grow your hair.
+                        But even though there's no concrete evidence that directly links castor oil and hair growth, all hope isn't lost. Hear me out: The ricinoleic acid in castor oil helps lock in moisture while promoting a clean and healthy scalp—all of which are essential to hair growth. 
+                        So if growing your hair super long is the goal, there's no reason you shouldn't be using castor oil to set yourself up for success.
+                    </p>
+                </article>
+            </div>
+
+            <!--Row of images -->
+            <section>
+                <div class="List">
+                    <ul class="row" id="ListImages">
+                        <li class="list-item active">
+                            <a href="#"><img src="HaircareImages/Coconut-Oil.jpg" alt="Coconut Oil"></a>
+                            <span>COCONUT OIL</span>
+                        </li>
+                        <li class="list-item">
+                            <a href="#"><img src="HaircareImages/Argan-Oil.jpg" alt="Argan Oil"></a>
+                            <span>ARGAN OIL</span>
+                        </li>
+                        <li class="list-item">
+                            <a href="#"><img src="HaircareImages/Rosemary-Oil.jpg" alt="Rosemary Oil"></a>
+                            <span>ROSEMARY OIL</span>
+                        </li>
+                        <li class="list-item">
+                            <a href="#"><img src="HaircareImages/Jojoba-Oil.jpg" alt="Jojoba Oil"></a>
+                            <span>JOJOBA OIL</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--Main Content-->
+            <div class="col-md-9">
+                <article class="Content">
+                    <p>Thanks to all of its properties, rosemary oil has been used for centuries to stimulate blood circulation in the scalp, prevent hair loss, slow down graying hair, and help with dry scalp and dandruff, according to Dr. Harth. 
+                        As if that list of benefits wasn't impressive enough, Dr. Harth adds that applying rosemary oil on hair strands could even reduce hair breakage and split ends. And guess what? It's got the evidence to back it up.
+                    </p>
+                    <p>Unlike other hair or skin oils, jojoba oil is not a true oil, according to Rodney. Instead, it's a wax ester, similar in both structure and function to the sebum naturally produced by our skin. 
+                        It's also rich in vitamin E and antioxidants, all of which make it great for reducing scalp inflammation that appears as redness, itching, or flaking. And because jojoba oil has natural antifungal 
+                        and antibacterial agents, it usually plays nicely with dandruff, and can even help calm your flakes.
+                    </p>
+                    <p>As far as the hair-smoothing benefits go, Rodney says that jojoba oil works by forming a protective coating over each hair strand, which helps reduce frizz, lock in moisture, and make hair soft, shiny, and tangle-free.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!--Slider-->
+    <div id="slider" class="owl-carousel">
+        <div>
+            <a href="https://www.allure.com/review/wander-beauty-baggage-claim-gold-eye-masks"><img src="Slider/EyeMask.jpg" height="250" alt="Lady wearing eyemask"></a>
+        </div>
+        <div>
+            <a href="https://www.allure.com/gallery/best-makeup-brushes"><img src="Slider/Brushes.jpg" height="250" alt="Makeup Brushes"></a>
+        </div>
+        <div>
+            <a href="https://stylemagazines.com.au/food/brisbanes-indian-food/"><img src="Slider/Bowl.jpg" height="250" alt="Half bowl of rice"></a>
+        </div>
+        <div>
+            <a href="https://www.allure.com/story/underpainting-makeup-contouring-technique"><img src="Slider/Blush.jpg" height="250" alt="Highlight for the face"></a>
+        </div>
+        <div>
+            <a href="https://stylemagazines.com.au/lifestyle/brisbane-best-boxing-gyms1/"><img src="Slider/shadow.jpg" height="250" alt="Shadow of a woman on the wall"></a>
+        </div>
+        <div>
+            <a href="https://www.allure.com/gallery/editors-favorite-new-beauty-products-january-2022"><img src="Slider/products.jpg" height="250" alt="Texture of products"></a>
+        </div>
+        <div>
+            <a href="https://stylemagazines.com.au/lifestyle/medibank-feel-good-program-review/"><img src="Slider/yoga.jpg" height="250" alt="Woman doing yoga"></a>
+        </div>
+        <div>
+            <a href="https://www.allure.com/sponsored/story/pantene-essential-botanicals-passion-fruit-cocoa-butter-shampoo-conditioner-review"><img src="Slider/CombingHair.jpg" height="250" alt="An older lady combing hair"></a>
+        </div>
+        <div>
+            <a href="https://stylemagazines.com.au/food/anita-gelato/"><img src="Slider/icecream.jpg" height="250" alt="Icecream"></a>
+        </div>
+        <div>
+            <a href="https://stylemagazines.com.au/beauty/brisbanes-best-hair-colourists/"><img src="Slider/PinkHair.jpg" height="250" alt="A girl with pink hair"></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row" id="Top">
+                <div class="col-sm-6" id="SocialMedia">
+                    <ul>
+                        <li class="footer-icon">
+                            <img src="FooterImages/Instagram.png" alt="Instagram Icon">
+                        </li>
+                        <li class="footer-icon">
+                            <img src="FooterImages/Twitter.png" alt="Twitter Icon">
+                        </li>
+                        <li class="footer-icon">
+                            <img src="FooterImages/Facebook.png" alt="Facebook Icon">
+                        </li>
+                        <li class="footer-icon">
+                            <img src="FooterImages/Pintrest.png" alt="Pinterest Icon">
+                        </li>
+                        <li class="footer-icon">
+                            <img src="FooterImages/Youtube.png" alt="Youtube Icon">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6" id="FooterLogoContents">
+                    <ul class="footer-listContainer">
+                        <li class="footer-list item"><a href="#">About us</a></li>
+                        <li class="footer-list item"><a href="#">Contact</a></li>
+                        <li class="footer-list item"><a href="#">Careers</a></li>
+                        <li class="footer-list item"><a href="#">Newsletters</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row" id="Middle">
+                <div class="col-sm-3 offset-md-1" id="BrandNetwork">
+                    <span>GlaMe Networks</span>
+                    <div class="footer-partners">
+                        <ul>
+                            <li><a href="#">GlaMe CANADA</a></li>
+                            <li><a href="#">GlaMe MEXICO</a></li>
+                            <li><a href="#">GlaMe ITALY</a></li>
+                            <li><a href="#">GlaMe TURKEY</a></li>
+                            <li><a href="#">GlaMe KOREA</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 offset-md-1" id="Shop">
+                    <span>Shop Here</span>
+                    <div class="footer-shop">
+                        <ul>
+                            <li><a href="#">Makeup</a></li>
+                            <li><a href="#">Skincare</a></li>
+                            <li><a href="#">Haircare</a></li>
+                            <li><a href="#">Workout</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4" id="More">
+                    <form name="Form">
+                        <div class="container">
+                            <input class="text-field" type="text" id="identity" placeholder="Name" name="name" required>
+                            <input class="text-field" type="text" id="mail" placeholder="Email Address" name="email"
+                                style="margin-top:15px" required>
+                        </div>
+                        <div class="container">
+                            <input type="submit" value="Subscribe" onclick="Subscribe();">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row" id="Bottom">
+                <div class="col-sm-7 offset-md-3" id="Description">
+                    <p>GlaMe is all about sharing, inspiring and motivating individuals to learn more about themselves. 
+                        Ranging from skincare to fitness, all are worth learning to feel good about yourself! 
+                    </p>
+                    <span>&copy; GlaMe Magazine 2022</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

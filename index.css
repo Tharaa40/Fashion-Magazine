@@ -1,0 +1,398 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/*Popup*/ /*This appears when the index.html page is loaded*/
+/*Modified from https://www.youtube.com/watch?v=U2k4DWKt_FE */
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 999;
+}
+
+.contentBox
+{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background: #6B4F4F;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.contentBox .content
+{
+    position: relative;
+    width: 300px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    color: white;
+}
+
+.contentBox .content h3
+{
+    font-size: 2em;
+    overflow: hidden;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+.close /*The close button on the popup box*/
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background:#ffffff url(CoverImages/Close.jpg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+
+/*Navigation Bar*/
+.navbar
+{
+    background-color: #f4dfd0;
+    color: black;
+} 
+
+.navbar-brand
+{
+    margin-left: 15px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-light a.navbar-brand:hover {color: #c6b698;}
+
+#NavBarMenu
+{
+    position: relative;
+    left: 4%;
+}
+
+#RightMenu, .search /*Sign In and Search Bar*/
+{
+    position: relative;
+    left: 3%;
+} 
+
+.search 
+{
+    padding-bottom: .5rem;
+    padding-left: 25px;
+}
+
+
+.search input.text-field /*Modified from https://stylemagazines.com.au/ */
+{
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 30px;
+    width: 80%;
+}
+
+.nav-link 
+{
+   margin-left: 15px;
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#NavBarMenu a.nav-link {color: black;}
+
+#NavBarMenu a.nav-link:hover {color:#c6b698;}
+
+
+/*BANNER*/ /*This is the "Latest Insider" and 3 images below it*/
+/*Images were taken from https://www.gettyimages.com/*/
+.header-row span
+{
+    margin-left: 40%;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-family:'Playfair Display', serif;
+    color: maroon;
+}
+
+.container .banner {margin: 5px;}
+
+.row-2 
+{
+    display: flex; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+}
+
+.SecondLine, .ThirdLine  {font-family: 'Quattrocento Sans', sans-serif;} 
+
+.FirstLine:hover
+{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.col img:hover{cursor: pointer;}
+
+.col 
+{    
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.col img {max-width: 100%;}
+
+
+/*CENTER 6 IMAGES*/
+/*Images were taken from https://www.gettyimages.com/*/
+ #MainNews img
+{
+    margin-left: 10%;
+    width:80%; 
+    z-index: 0; 
+} 
+
+#MainNews {margin: 2%;}
+
+.col-lg-4
+{
+    position: relative;
+    float: left;
+    padding: 10px;
+    margin-bottom: 16px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.image-gridC , .image-gridA /*The first and third column*/
+ {
+    display: block;
+    height: auto;
+    cursor: pointer;
+}
+
+.image-gridA span, .image-gridB span, .image-gridC span {margin-left: 10%;}
+
+.image-gridA a, .image-gridB a, .image-gridC a {margin-left: 10%;}
+
+.MainFirstLine 
+{
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+}
+
+.MainSecondLine span
+{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.MainThirdLine span
+{
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.MainFirstLine:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
+}
+
+#Picture_A img:hover, #Picture_B img:hover, #Picture_C img:hover,
+#Picture_D img:hover, #Picture_E img:hover, #Picture_F img:hover,
+#Picture_G img:hover, #Picture_H img:hover {transform: scale(1.1);}
+
+
+/*Bottom Images*/ /*These are the 4 images before the carousel*/
+/*Images were taken from https://www.gettyimages.com/ */
+#PicA img, #PicB img, #PicC img, #PicD img 
+{
+    object-fit: scale-down;
+    height: 300px;
+    width: 300px;
+}
+
+.ThirdDescription 
+{
+    position: relative;
+    bottom: 50%;
+    left: 48%;
+}
+
+.Title
+{
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.Subtitle {font-family:'Quattrocento Sans', sans-serif;}
+
+#PicA img:hover, #PicB img:hover, #PicC img:hover, #PicD img:hover
+{
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+
+/*Carousel*/ /*Images were taken from https://www.gettyimages.com/ */
+.owl-stage
+{
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.owl-item {width:250px !important;}
+
+
+/*Footer*/
+#footer
+{
+    background-color:#cdbba7;
+    bottom: 0;
+}
+
+
+#SocialMedia img /*Images were taken from https://www.flaticon.com/search?word=pinterest&type=icon */
+{
+    float: left;
+    width: 40px;
+    margin-left: 25px;
+}
+
+#SocialMedia img:hover {opacity: 0.7;}
+
+.footer-icon {display: inline;} 
+
+#Top
+{
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footer-listContainer
+{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 25px;
+}
+.footer-list 
+{
+    padding-left: 25px;
+    border-right: 2px firebrick solid;
+    padding-right: 5%;
+}
+
+.footer-list a
+{
+    color: black;
+    text-decoration: none;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.footer-partners a , .footer-shop a
+{
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+#BrandNetwork span, #Shop span
+{
+    font-size: 1.5em;
+    font-weight: 900;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+#BrandNetwork ul, #Shop ul {padding-left: 1rem;}
+
+#Middle 
+{
+    margin-top: 25px;
+    display: flex;
+}
+
+#Description p 
+{
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#Description span 
+{
+    margin-left: 26%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.text-field
+{
+    width: 100%;
+    text-align: center;
+    outline: none;
+}
+
+input[type="submit"]  /*Modified from https://www.w3schools.com/howto/howto_css_newsletter.asp*/
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(200, 132, 132);
+    color: white;
+    position: relative;
+    margin-left: 30%;
+    margin-top: 5px;
+    width: 45%;
+}
+
+::placeholder {color:black;}
+
+/*To make it responsive*/
+@media screen and (max-width:600px)  /*if screen size is smaller than 600px*/
+{
+    .header-row span, #ThirdSection, #SocialMedia, #FooterLogoContents 
+    {
+        display: none;
+    }
+    .contentBoxs
+    {
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+    }
+    #BrandNetwork , #Shop 
+    {
+        text-align: center
+    }   
+}

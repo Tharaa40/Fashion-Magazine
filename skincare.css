@@ -1,0 +1,301 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/*Navigation Bar*/
+.navbar
+{
+    background-color: #f4dfd0;
+    color: black;
+} 
+
+.navbar-brand
+{
+    margin-left: 15px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-light a.navbar-brand:hover {color: #c6b698;}
+
+#NavBarMenu
+{
+    position: relative;
+    left: 4%;
+}
+
+#RightMenu, .search /*Sign In and Search Bar*/
+{
+    position: relative;
+    left: 3%;
+} 
+
+.search
+{
+    padding-bottom: .5rem;
+    padding-left: 25px;
+}
+
+.search input.text-field /*Modified from https://stylemagazines.com.au/ */
+{
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 30px;
+    width: 80%;
+}
+
+.nav-link 
+{
+   margin-left: 15px;
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#NavBarMenu a.nav-link {color: black;}
+
+#NavBarMenu a.nav-link:hover {color: #c6b698;}
+
+
+/*Banner Image*/ /*Image was taken from https://www.gettyimages.com/ */
+#Main-Image img
+{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/*Heading*/
+#HeaderSection
+{
+    padding-top: 15px;
+    padding-left: 40px;
+    background-color: #dad0c2;
+    font-family: 'Playfair Display', serif;
+}
+
+#Sub {padding-top: 15px;}
+
+#ArticleHeader, #SubHeader, #Author, #Date {padding-bottom: 10px;}
+
+
+/*Catalogue*/ /*Image was taken from https://www.gettyimages.com/ */
+#Catalogue
+{
+    position: relative;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor:pointer;
+}
+
+#Catalogue img
+{ 
+   width: 100%;
+   height: auto;
+   object-fit: contain;
+}
+
+.CatalogueName
+{
+    color: rgb(151, 151, 204);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.CatalogueName a
+{
+    text-decoration: none;
+    color: rgb(151, 151, 204);
+}
+
+
+/*Main Content*/ /*Images were taken from https://www.allure.com/ */
+.Content
+{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.MainContent img  /*The images from Step 1 to Step 6*/
+{
+    width: 400px;
+    height: auto;
+    float: right;
+    margin-right: 30%;
+}
+
+.MainContent span
+{
+    font-size: 30px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.MainContent p {font-family: Georgia, 'Times New Roman', Times, serif;}
+
+
+/*Row of Images*/
+/*Images were taken from https://www.allure.com/ */
+#ListImages
+{
+    display: flex;
+    background-color:darksalmon;
+    padding: 2rem;
+}
+
+.list-item {flex:1;}
+
+.list-item img
+{
+    max-width: 100%;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.list-item img:hover {opacity: 1;}
+
+
+/*Carousel*/ /*Images were taken from https://www.gettyimages.com/ */
+.owl-stage
+{
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.owl-item {width:250px !important;}
+
+
+/*Footer*/
+#footer
+{
+    background-color:#cdbba7;
+    bottom: 0;
+}
+
+#SocialMedia img /*Images were taken from https://www.flaticon.com/search?word=pinterest&type=icon */
+{
+    float: left;
+    width: 40px;
+    margin-left: 25px;
+}
+
+#SocialMedia img:hover {opacity: 0.7;}
+
+.footer-icon {display: inline;}
+
+#Top
+{
+    max-width: 100%;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+}
+
+.footer-listContainer
+{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 25px;
+}
+
+.footer-list 
+{
+    padding-left: 25px;
+    border-right: 2px firebrick solid;
+    padding-right: 5%;
+}
+
+.footer-list a
+{
+    color: black;
+    text-decoration: none;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.footer-partners a , .footer-shop a
+{
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+#BrandNetwork span, #Shop span
+{
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+#BrandNetwork ul, #Shop ul {padding-left: 1rem;}
+
+#Middle 
+{
+    margin-top: 25px;
+    display: flex;
+}
+
+#Description p 
+{
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#Description span 
+{
+    margin-left: 26%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.text-field
+{
+    width: 100%;
+    text-align: center;
+    outline: none;
+}
+
+input[type="submit"]  /*Modified from https://www.w3schools.com/howto/howto_css_newsletter.asp */
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(200, 132, 132);
+    color: white;
+    position: relative;
+    margin-left: 30%;
+    margin-top: 5px;
+    width: 45%;
+}
+
+::placeholder {color:black;}
+
+
+/*To make it responsive*/
+@media screen and (max-width:600px)  /*if screen size is smaller than 600px*/
+{
+    #SocialMedia, #FooterLogoContents, #MainContent img 
+    {
+        display: none;
+    }  
+    #BrandNetwork , #Shop 
+    {
+        text-align: center
+    } 
+    .MainContent img
+    {
+        width: 50%;
+    }
+}
