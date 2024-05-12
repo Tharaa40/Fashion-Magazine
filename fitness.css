@@ -1,0 +1,391 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/*Navigation Bar*/
+.navbar
+{
+    background-color: #f4dfd0;
+    color: black;
+} 
+
+.navbar-brand
+{
+    margin-left: 15px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-light a.navbar-brand:hover {color: #c6b698;}
+
+#NavBarMenu
+{
+    position: relative;
+    left: 4%;
+}
+
+#RightMenu, .search /*Sign In and Search Bar*/
+{
+    position: relative;
+    left: 3%;
+} 
+
+.search
+{
+    padding-bottom: .5rem;
+    padding-left: 25px;
+}
+
+.search input.text-field /*Modified from https://stylemagazines.com.au/ */
+{
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    height: 30px;
+    width: 80%;
+}
+
+.nav-link 
+{
+   margin-left: 15px;
+   font-weight: bold;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#NavBarMenu a.nav-link {color: black;}
+
+#NavBarMenu a.nav-link:hover {color:#c6b698;}
+
+
+/*Banner Image*/ /*Image was taken from https://www.gettyimages.com/ */
+#Main-Image img
+{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/*Heading*/
+#HeaderSection
+{
+    padding-top: 15px;
+    padding-left: 40px;
+    background-color: #dad0c2;
+    font-family: 'Playfair Display', serif;
+}
+
+#Sub {padding-top: 15px;}
+
+#ArticleHeader, #SubHeader, #Author, #Date {padding-bottom: 10px;}
+
+
+/*Catalogue*/ /*Image was taken from https://www.gettyimages.com/ */
+#Catalogue
+{
+    position: relative;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor:pointer;
+}
+
+#Catalogue img
+{ 
+   width: 100%;
+   height: auto;
+   object-fit: contain;
+}
+
+.CatalogueName
+{
+    color: rgb(151, 151, 204);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.CatalogueName a
+{
+    text-decoration: none;
+    color: rgb(151, 151, 204);
+}
+
+
+/*Column of Food images at the side*/ /*Image was taken from https://www.gettyimages.com/ */
+#Food
+{
+    --gap: 16px;
+    --num-cols: 1;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+#Food > img
+{
+    position: relative;
+    left:20%;
+    width: 55%;
+    height: 100%;
+}
+
+.overlay
+{
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Quattrocento Sans', sans-serif;
+    position: relative;
+    bottom: 85px;
+    text-align:center;
+    opacity: 0.5;
+}
+
+.overlay:hover
+{
+    opacity:1; 
+    cursor: pointer;
+} 
+
+
+/*Main Content*/
+.content h2, .content h5
+{
+    overflow-y: hidden;
+    padding-bottom: 15px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    line-height: 25px;
+}
+
+article.content {margin: 25px 15px 15px;}
+
+.content p 
+{
+    margin-bottom: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*4 workout pictures*/ /*Image was taken from https://www.gettyimages.com/ */
+#Fitness-Section
+{
+    display: flex;
+    padding-right: 32px;
+}
+
+.list-item
+{
+    flex:1;
+    padding:0px;
+}
+
+.list-item img
+{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.list-item img:hover {transform: scale(0.9);}
+
+.list-item h4
+{
+    overflow: hidden;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.list-item h4::after
+{
+    content: '';
+    display: block;
+    border-top: 1px solid black;
+    width: 35%;
+    position: relative;
+    left: 35%;
+    margin: 10px 0px;
+}
+
+#Fitness-Section p
+{
+    font-family:'Quattrocento Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: normal;
+    position: relative;
+    bottom: 25px;
+}
+
+
+/*Carousel*/ /*Images were taken from https://www.gettyimages.com/ */
+.owl-stage
+{
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.owl-item {width:250px !important;}
+
+
+/*Footer*/
+#footer
+{
+    background-color:#cdbba7;
+    bottom: 0;
+}
+
+#SocialMedia img /*Images were taken from https://www.flaticon.com/search?word=pinterest&type=icon */
+{
+    float: left;
+    width: 40px;
+    margin-left: 25px;
+}
+
+#SocialMedia img:hover {opacity: 0.7;}
+
+.footer-icon {display: inline;}
+
+#Top
+{
+    max-width: 100%;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+}
+
+.footer-listContainer
+{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 25px;
+}
+
+.footer-list 
+{
+    padding-left: 25px;
+    border-right: 2px firebrick solid;
+    padding-right: 5%;
+}
+
+.footer-list a
+{
+    color: black;
+    text-decoration: none;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.footer-partners a , .footer-shop a
+{
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+#BrandNetwork span, #Shop span
+{
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+#BrandNetwork ul, #Shop ul {padding-left: 1rem;}
+
+#Middle 
+{
+    margin-top: 25px;
+    display: flex;
+}
+
+#Description p 
+{
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#Description span 
+{
+    margin-left: 26%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.text-field
+{
+    width: 100%;
+    text-align: center;
+    outline: none;
+}
+
+input[type="submit"]  /*Modified from https://www.w3schools.com/howto/howto_css_newsletter.asp */
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(200, 132, 132);
+    color: white;
+    position: relative;
+    margin-left: 30%;
+    margin-top: 5px;
+    width: 45%;
+}
+
+::placeholder {color:black;}
+
+
+/*To make it responsive*/
+@media screen and (max-width:600px) /*if screen size is smaller than 600px*/
+{
+    #Fitness-Section img
+    {
+       display: block;
+    }
+    #SocialMedia, #FooterLogoContents, #Fitness-Section p, .list-item h4::after, #Food
+    {
+        display: none;
+    }
+    
+    #BrandNetwork , #Shop 
+    {
+        text-align: center
+    }
+    .list-item img
+    {
+        width: 80%;
+        height: 50%;
+    }
+    .overlay
+    {
+        top: -15px;
+        margin-left: 15%;
+        font-size: 75%;
+    }
+    
+    #Food > img
+    {
+        width: 120%;
+    }
+
+}
